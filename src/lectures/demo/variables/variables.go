@@ -41,9 +41,9 @@ func main() {
 
 	word1,word2,_:="hello","word","!"
 	fmt.Println(word1,word2)
-
-	 var word3 int=2
+	
+	var word3 int=2
+	
 	fmt.Println(word3)
-
 
 }
