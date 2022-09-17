@@ -19,6 +19,38 @@ package main
 
 import "fmt"
 
-func main() {
+type Coordinate struct{
+	x,y int
+}
+type Rectangle struct {
+	a Coordinate 	//top left
+	b Coordinate	//bottom right
+}
+func width(rec Rectangle)int{
+	return (rec.b.x - rec.a.x)
+}
+func lenght(rec Rectangle)int{
+	return (rec.a.y - rec.b.y)
+}
+func area(rec Rectangle)int{
+	return width(rec) * lenght(rec)
+}
+func perimeter(rec Rectangle)int{
+	return (width(rec) * 2)+(lenght(rec) * 2)
+}
+func printInfo(rec Rectangle) {
+	fmt.Println("Area is",area(rec))
+	fmt.Println("primeter is",perimeter(rec))
+}
 
+
+func main() {
+	
+	rect:=Rectangle{a:Coordinate{0,7},b: Coordinate{10,0}}
+	printInfo(rect)
+
+	rect.a.y *= 2
+	rect.b.x *= 2
+
+	printInfo(rect)
 }
