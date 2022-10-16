@@ -18,7 +18,7 @@ func (player *Player) addhealth(amount uint) {
 
 }
 func (player *Player) addDamage(amount uint) {
-	if player.health-amount < player.health{
+	if player.health-amount < player.health {
 		player.health -= amount
 		fmt.Println(player.name, "damage", amount, "damage->", player.health)
 	} else {
