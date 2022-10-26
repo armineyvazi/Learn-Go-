@@ -41,7 +41,7 @@ func (t Trucks) String() string {
 //* The shop has lifts for multiple vehicle sizes/types:
 //  that the shop works on.
 //* Vehicles have a model name in addition to the vehicle type:
-//  - Example: "Truck" is the vehicle type, "Road Devourer" is a model name
+//- Example: "Truck" is the vehicle type, "Road Devourer" is a model name
 //* Direct at least 1 of each vehicle type to the correct
 //  lift, and print out the vehicle information.
 func (m Motorcycles) autopark() Lift {

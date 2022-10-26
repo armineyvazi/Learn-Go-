@@ -64,4 +64,3 @@ func parsTime(input string) (Time, error) {
 		return Time{hour: hour, minute: minute, second: second}, nil
 	}
 }
-
